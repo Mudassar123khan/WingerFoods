@@ -2,8 +2,9 @@ import React, { useState } from 'react'
 import './Add.css'
 import { assets } from '../../assets/assets'
 import axios from 'axios'
-function Add() {
-    const url = 'http://localhost:4000'
+import { toast } from 'react-toastify'
+function Add({url}) {
+    
     const [image,setImage] = useState(false);
     const [data,setData] = useState({
         name:"",
@@ -39,9 +40,11 @@ function Add() {
                     price:"",
                     category:"Salad"
                 })
-                setImage(false)
+                setImage(false);
+                toast.success(response.data.message);
             }else{
                     console.log("Data not sent");
+                    toast.error(response.data.message);
             }
     }
   return (
