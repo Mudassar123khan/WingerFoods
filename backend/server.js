@@ -31,5 +31,5 @@ app.get("/",(req,res)=>{
 })
 
 app.listen(port,()=>{
-    console.log(`Server is running on port ${"http://localhost:4000/"}`)
+    console.log(`Server is running on port ${"https://wingerfoods-backend.onrender.com"}`)
 })
