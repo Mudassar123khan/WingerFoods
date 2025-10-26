@@ -14,9 +14,9 @@ function Footer() {
             pariatur eligendi praesentium.
           </p>
           <div className="footer-social-icons">
-            <img src={assets.facebook_icon} alt="facebook icon" />
-            <img src={assets.linkedin_icon} alt="linkedIn icon" />
-            <img src={assets.twitter_icon} alt="twitter icon" />
+            <a href="https://www.facebook.com/profile.php?id=61582642790293"><img src={assets.facebook_icon} alt="facebook icon" /></a>
+            <a href="https://www.linkedin.com/in/mohdmudassirkhan/`"><img src={assets.linkedin_icon} alt="linkedIn icon" /></a>
+            <a href="https://x.com/kh35482_khan"><img src={assets.twitter_icon} alt="twitter icon" /></a>
           </div>
         </div>
         <div className="footer-content-center">
