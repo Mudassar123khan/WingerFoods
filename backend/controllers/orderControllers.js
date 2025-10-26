@@ -2,7 +2,7 @@ import Stripe from 'stripe'
 import orderModel from '../models/orderModel.js'
 import userModel from '../models/userModel.js'
 
-const frontend_url = "http://localhost:5173"
+const frontend_url = "https://wingerfoods-frontend.onrender.com"
 
 //setting up Stripe for payments
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
