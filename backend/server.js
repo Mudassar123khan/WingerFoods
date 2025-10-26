@@ -20,6 +20,7 @@ connectDB();
 
 
 //api endpoints
+app.get('/health',(req,res)=>res.send('OK'));
 app.use('/api/food', foodRouter);
 app.use("/images", express.static("uploads"));
 app.use('/api/user',userRouter);
