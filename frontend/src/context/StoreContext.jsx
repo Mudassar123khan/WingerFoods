@@ -10,7 +10,7 @@ const StoreContextProvider = ({ children }) => {
   const [cartItems, setCartItems] = useState({});
 
   //This is the url of our server
-  const url = "http://localhost:4000";
+  const url = "https://wingerfoods-backend.onrender.com";
 
  //state variable to store token received from client
   const [token, setToken] = useState("");
